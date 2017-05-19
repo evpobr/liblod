@@ -1,6 +1,10 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct lod_private
 {
-	char filename[_MAX_PATH];
+	struct lod_vio *vio;
+	int is_opened;
+	int close_vio;
+	FILE *fp;
 } lod_ctx;

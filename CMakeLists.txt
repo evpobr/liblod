@@ -8,7 +8,9 @@ set(lod_PUBLIC_HEADERS
 	include/lod/lod.h)
 set(lod_SOURCES
 	src/lod.c
-	src/lod_private.h)
+	src/lod_private.h
+	src/std_io.c
+	src/std_io.h)
 add_library(lod ${lod_PUBLIC_HEADERS} ${lod_SOURCES})
 target_include_directories(lod PUBLIC include ${CMAKE_CURRENT_BINARY_DIR})
 set_target_properties(lod PROPERTIES
