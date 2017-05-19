@@ -16,12 +16,12 @@ typedef struct lod_private lod_ctx;
 /**
  * @brief Creates new LOD context.
  */
-LOD_API lod_ctx *lod_new(void);
+LOD_EXPORT lod_ctx *lod_new(void);
 
 /**
  * @brief Destoys LOD context and frees allocated memory.
  */
-LOD_API void lod_free(lod_ctx *ctx);
+LOD_EXPORT void lod_free(lod_ctx *ctx);
 
 #ifdef __cplusplus
 }

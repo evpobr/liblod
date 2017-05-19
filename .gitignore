@@ -78,3 +78,6 @@ CTestTestfile.cmake
 
 .vs/
 CMakeSettings.json
+
+# Others
+lod_export.h

@@ -7,12 +7,12 @@
 
 #include <stdlib.h>
 
-LOD_API lod_ctx *lod_new(void)
+LOD_EXPORT lod_ctx *lod_new(void)
 {
 	return malloc(sizeof(lod_ctx));
 }
 
-LOD_API void lod_free(lod_ctx *ctx)
+LOD_EXPORT void lod_free(lod_ctx *ctx)
 {
 	if (ctx)
 		free(ctx);
