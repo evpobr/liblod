@@ -34,6 +34,7 @@ enum LOD_BOOL
 	LOD_TRUE  = 1
 };
 
+
 /**
 * @brief LOD Virtual IO structure
 */

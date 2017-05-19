@@ -124,7 +124,7 @@ int lod_set_std_vio(lod_ctx *ctx, const char *filename)
 		FILE *fp = std_io_open(filename, &ctx->vio);
 		if (fp)
 		{
-			ctx->fp = fp;
+			ctx->user_data = fp;
 			ctx->close_vio = LOD_TRUE;
 			ret = LOD_TRUE;
 		}
