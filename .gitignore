@@ -40,6 +40,8 @@ Makefile.in
 /py-compile
 /test-driver
 /ylwrap
+.deps/
+.dirstamp
 
 # http://www.gnu.org/software/autoconf
 
@@ -49,18 +51,22 @@ Makefile.in
 /aclocal.m4
 /compile
 /config.guess
-/config.h.in
-/config.sub
+/config.*
 /configure
 /configure.scan
 /depcomp
 /install-sh
 /missing
 /stamp-h1
+/build-aux
+m4/*
+!m4/visibility.m4
 
 # https://www.gnu.org/software/libtool/
 
 /ltmain.sh
+/libtool
+.libs
 
 # http://www.gnu.org/software/texinfo
 
@@ -81,3 +87,5 @@ CMakeSettings.json
 
 # Others
 lod_export.h
+*.tar.gz
+
