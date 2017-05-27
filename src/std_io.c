@@ -89,7 +89,12 @@ lod_off_t std_io_tell(void *user_data)
 
 FILE *std_io_open(const char *filename, struct lod_vio **vio)
 {
-	FILE *fp = fopen(filename, "rb+");
+#ifdef USE_MSVC_SAFE_CRT
+	FILE *fp = NULL;
+	fopen_s(&fp, filename, "rb");
+#else
+	FILE *fp = fopen(filename, "rb");
+#endif
 
 	if (fp)
 	{
